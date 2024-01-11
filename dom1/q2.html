@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <form id="calculatorForm">
+        1st Number: <input type="text" id="firstNumber" /><br>
+        2nd Number: <input type="text" id="secondNumber" /><br>
+        <input type="button" value="multiply" onclick="multiply()" />
+        <input type="button" value="divide" onclick="divide()" />
+    </form>
+
+    <p>The Result is: <br>
+    <span id="result"></span></p>
+
+    <script>
+        function multiply() {
+            var n1 = document.getElementById("firstNumber").value;
+            var n2 = document.getElementById("secondNumber").value;
+
+            if (n1!== "" && n2 !== "") {
+                n1 = parseFloat(n1);
+                n2 = parseFloat(n2);
+
+                document.getElementById("result").innerText = (n1*n2);
+            } else {
+                alert("Please enter both numbers");
+            }
+        }
+        function divide() {
+            var n1 = document.getElementById("firstNumber").value;
+            var n2 = document.getElementById("secondNumber").value;
+
+            if (n1!== "" && n2 !== "") {
+                n1 = parseFloat(n1);
+                n2 = parseFloat(n2);
+
+                document.getElementById("result").innerText = (n1/n2);
+            } else {
+                alert("Please enter both numbers");
+            }
+        }
+    </script>
+
+</body>
+</html>

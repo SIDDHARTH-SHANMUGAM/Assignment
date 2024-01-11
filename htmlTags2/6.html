@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission From</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 100px 2px 400px;
+            gap: 5px;
+        }
+        input{
+            height: 22px;
+        }
+        h1,.h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            position: relative;
+            left: 100px;
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        <h1><ul>ADMISSION FORM</ul></h1>
+        <hr>
+        <form action="">
+            <div class="form">
+                <div class="grid">
+                    <label for="">Name</label>
+                    <label for="">:</label>
+                    <input type="text">
+                    <label for="">Father Name</label>
+                    <label for="">:</label>
+                    <input type="text">
+                    <label for="">DOB</label>
+                    <label for="">:</label>
+                    <input type="text">
+                    <label for="">Department</label>
+                    <label for="">:</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <h3>Gender</h3>
+                    <input type="radio"><label for="">Male</label><br>
+                    <input type="radio"><label for="">Female</label>
+                </div>
+            </div>
+            <div class="h1">
+                <button>Submit</button>
+                <button>Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

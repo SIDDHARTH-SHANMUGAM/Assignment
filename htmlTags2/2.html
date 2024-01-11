@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b{
+            border: solid 0.5px;
+        }
+        .con{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid{
+            display: grid;
+            width: 200px;
+            grid-template-columns: auto auto auto auto;
+        }
+        .solo{
+            grid-column: 1/4 span;
+            
+        }
+        .solo input{
+            width: 96%;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="grid">
+            <div class="b type solo"><input type="text"></div>
+            <div class="b c1"><button>0</button></div>
+            <div class="b c1"><button>1</button></div>
+            <div class="b c1"><button>2</button></div>
+            <div class="b c1"><button>+</button></div>
+            <div class="b c1"><button>3</button></div>
+            <div class="b c1"><button>4</button></div>
+            <div class="b c1"><button>5</button></div>
+            <div class="b c1"><button>-</button></div>
+            <div class="b c1"><button>6</button></div>
+            <div class="b c1"><button>7</button></div>
+            <div class="b c1"><button>8</button></div>
+            <div class="b c1"><button>*</button></div>
+            <div class="b c1"><button>9</button></div>
+            <div class="b c1"><button>+/-</button></div>
+            <div class="b c1"><button>=</button></div>
+            <div class="b c1"><button>/</button></div>
+            <div class="b solo"><button>clear</button></div>
+        </div>
+    </div>
+</body>
+</html>

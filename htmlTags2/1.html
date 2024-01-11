@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online MarkList</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction : column;
+            width: 100%;
+            height: 100%;
+        }
+        .anchors{
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 200px 600px;
+
+        }
+        .g1{
+            display: flex;
+            justify-content: end;
+        }
+        .g5{
+            grid-column: 1/span 2;
+            display: flex;
+            justify-content: center;
+        }
+        .g14{
+            grid-column: 1/span 2;
+            display: flex;
+            justify-content: center;
+        }
+        .bo{
+            border: solid 0.5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Online MarkList</h1>
+        <div class="anchors">
+            <a href="#">Home</a>
+            <a href="#">Mark Entry</a>
+            <a href="#">Mark View</a>
+            <a href="#">LogOut</a>
+        </div>
+            <p>Mark Entry</p>
+        <div class="content">
+            <div class="grid">
+                <div class="g1 bo"><label for="">Register No :</label></div>
+                <div class="bo"><input type="text"></div>
+                <div class="g1 bo"><label for="">Name :</label></div>
+                <div class="bo"><input type="text"></div>
+                <div class="g5 bo"><p><u>Marks</u></p></div>
+                <div class="g1 bo"><label for="">English :</label></div>
+                <div class="bo"><input type="text"></div>
+                <div class="g1 bo"><label for="">Physics :</label></div>
+                <div class="bo"><input type="text"></div>
+                <div class="g1 bo"><label for="">Chemistry :</label></div>
+                <div class="bo"><input type="text"></div>
+                <div class="g1 bo"><label for="">Maths :</label></div>
+                <div class="bo"><input type="text"></div>
+                <div class="g14 bo"><button>Save</button></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

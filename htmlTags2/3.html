@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 80px 400px;
+            gap: 10px;
+        }
+        input{
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <h1>Student Registration Form</h1>
+    <form class="grid">
+        <label for="">Name</label>
+        <input type="text">
+        <label for="">Father Name</label>
+        <input type="text">
+        <label for="">Postal Address</label>
+        <input type="text">
+        <label for="">Personal Address</label>
+        <input type="text">
+        <label for="">Gender</label>
+        <div class="gender">
+            <input type="radio"><label>Male</label>
+            <input type="radio"><label>Female</label>
+        </div>
+        <label for="">City</label>
+        <select name="" id="">
+            <option value="select">select</option>
+            <option value="New Delhi">New Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Goa">Goa</option>
+            <option value="Patna">Patna</option>
+        </select>
+        <label for="">Course</label>
+        <select name="" id="">
+            <option value="select">select</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="Mumbai">MCA</option>
+            <option value="Goa">MBA</option>
+            <option value="Patna">BCA</option>
+        </select>
+        <label for="">Distrit</label>
+        <select name="" id="">
+            <option value="select">select</option>
+            <option value="New Delhi">Nalanda</option>
+            <option value="Mumbai">Up</option>
+            <option value="Goa">Goa</option>
+            <option value="Patna">Patna</option>
+        </select>
+        <label for="">States</label>
+        <select name="" id="">
+            <option value="select">select</option>
+            <option value="New Delhi">New Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Goa">Goa</option>
+            <option value="Patna">Patna</option>
+        </select>
+
+
+        <label for="">PInCode</label>
+        <input type="text">
+        <label for="">EmailId</label>
+        <input type="text">
+        <label for="">DOB</label>
+        <input type="text">
+        <label for="">MobileNo</label>
+        <input type="text">
+        <button>Reset</button>
+        <button>Submit Form</button>
+    </form>
+    </div>
+
+</body>
+</html>

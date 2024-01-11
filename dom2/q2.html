@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Item to List</title>
+</head>
+<body>
+
+    <ul id="mylist">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+
+    <button onclick="addWater()">Add Water</button>
+
+    <script>
+        function addWater() {
+            
+            var liNode = document.createElement("li");
+            var textNode = document.createTextNode("Water");
+            liNode.appendChild(textNode);
+            document.getElementById("mylist").appendChild(liNode);
+        }
+    </script>
+
+</body>
+</html>

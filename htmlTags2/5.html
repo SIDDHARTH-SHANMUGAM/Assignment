@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Enquiry</title>
+    <style>
+        .basic{
+            padding: 15px;;
+            display: grid;
+            grid-template-columns: 50px 200px;
+            border: solid 0.5px;
+        }
+        .label{
+            z-index: 10;
+            position: absolute;
+            top: 70px;
+            left: 20px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Enquiry!!!</h1>
+        <form action="">
+            <label for="" class="label">Basic detail:</label>
+            <div class="basic">
+                <label for="">Name:</label><input type="text" placeholder="Enter the name">
+                <label for="">Email:</label><input type="text" >
+            </div>
+            <label for="">Birthdate:</label><input type="date" ><br>
+            <label for="">Phone:</label><input type="number" ><br>
+            <label for="">Are You married</label><input type="checkbox">
+            <label for="">When to call?Morning</label><input type="radio">
+            <label for="">|Noon</label><input type="radio">
+            <label for="">|Evening</label><input type="radio"><br>
+            <button>send</button>
+        </form>
+    </div>
+    
+</body>
+</html>

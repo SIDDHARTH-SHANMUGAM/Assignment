@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+</head>
+<body>
+
+  <h2>Login Page</h2>
+
+  <form id="loginForm" onsubmit="return validateForm()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required pattern="[a-zA-Z0-9]+"><br>
+    <label for="password">Password:</label>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required pattern="[A-Za-z\d#@$!%*?&]{8,}" >
+    <input type="submit" value="Login">
+  </form>
+
+</body>
+</html>
